@@ -6,4 +6,4 @@ export const { GET, POST, PUT } = serve({
   functions: [
     syncUserCreation,syncUserDeletion,syncUserUpdation,
   ],
-});git remote add origin https://github.com/YOUR_USERNAME/QuickCart-Updated.git
+});
