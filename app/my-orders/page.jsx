@@ -7,6 +7,8 @@ import Navbar from "@/components/Navbar";
 import Loading from "@/components/Loading";
 import axios from "axios";
 import toast from "react-hot-toast";
+import { assets } from "@/assets/assets";
+
 
 const MyOrders = () => {
 
