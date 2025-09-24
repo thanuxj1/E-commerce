@@ -1,5 +1,4 @@
 import { Inngest } from "inngest";
-import { syncIndexes } from "mongoose";
 import connectDB from "./db";
 import User from "@/models/User";
 import Order from "@/app/models/Order";
@@ -69,7 +68,7 @@ export const createUserOrder = inngest.createFunction({
 
 { event: "order/created" },
 
-  async ({ event }) => {
+  async ({ events }) => {
     const orders = events.map((event) => {
       return {
         userId: event.data.userId,
